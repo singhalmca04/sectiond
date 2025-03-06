@@ -22,7 +22,7 @@ app.post('/save/data', async (req, res)=>{
         stu.age = age;
         stu.subject = subject;
         stu = await stu.save();
-        res.status(200).send({data: stu, msg: "Data saved"});
+        res.status(200).send({data: stu, msg: "Data saved 2"});
     } catch(err) {
         console.log(err);
         res.status(500).send({data: err, msg: "Not Saved"});
